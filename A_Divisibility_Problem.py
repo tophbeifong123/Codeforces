@@ -1,11 +1,6 @@
 for _ in range(int(input())):
-    a,b = [int(x) for x in input().split()]
-    if b > a:
-        print(b-a)
+    a,b = map(int,input().split())
+    if a % b == 0:
+        print(0)
     else:
-        i = 1
-        while True:
-            if b*i > a:
-                print(a - b*i)
-                break
-            i+=1
+        print(b - (a % b))
