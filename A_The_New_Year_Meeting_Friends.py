@@ -8,6 +8,4 @@ elif x2 > x1 and x2 < x3 or x2 < x1 and x2 > x3:
 else:
     point = x3
 
-print(point)
-
 print(int(abs(x1 - point) + abs(x2 - point) + abs(x3 - point)))
