@@ -1,0 +1,7 @@
+John 6 1 1989
+Jack 30 10 1991
+Mary 1 12 1989
+Mira 31 3 1999
+Adam 1 1 1995
+Bryan 25 3 1992
+Katty 20 9 1996
