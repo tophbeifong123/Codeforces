@@ -1,13 +1,14 @@
+import bisect
+
 n = int(input())
-x = [int(x) for x in input().split()]
+xi = [int(x) for x in input().split()]
+xi.sort()
+
 q = int(input())
-m = []
-for _ in range(q):
-    m.append(int(input()))
-count =0
-for i in m:
-    count = 0
-    for j in x:
-        if i >= j:
-            count += 1
+mi = [int(input()) for _ in range(q)]
+
+for money in mi:
+    count = bisect.bisect_right(xi,money)
+    bisect.insort_right(xi,money)
+    print(xi)
     print(count)
