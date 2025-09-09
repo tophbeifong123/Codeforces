@@ -5,10 +5,10 @@ for _ in range(int(input())):
 
     if m > c:
         point_m += 1
-    else:
+    elif m < c:
         point_c += 1
 
-print(point_m,point_c)
+
 if point_m > point_c:
     print("Mishka")
 elif point_m < point_c:
