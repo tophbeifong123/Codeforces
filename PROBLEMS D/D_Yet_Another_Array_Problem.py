@@ -3,21 +3,16 @@ input = sys.stdin.readline
 
 for _ in range(int(input())):
     n = int(input())
-    arr = [int(x) for x in input().split()]
+    a = [int(x) for x in input().split()]
     flag = False
-    x = 2
+    result = 0
     
-    if 1 in arr:
-        x = 2
-        flag = True
-    else:
-        for i in range(2,max(arr)+1):
-            if any(math.gcd(i,x)==1 for x in arr):
-                flag = True
-                x = i
-                break
+    
+    for i in range(2,max(a)+10):
+        if any(math.gcd(i,x) == 1 for x in a):
+            flag = True
+            result = i
+            break
 
-    if flag:print(x)
+    if flag:print(result)
     else:print(-1)
-    
-    
