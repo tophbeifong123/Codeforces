@@ -1,0 +1,1 @@
+{"name":"Local: A_Fair_Playoff","url":"c:\\Users\\Acer\\Desktop\\CodeForce\\PROBLEMS A\\A_Fair_Playoff.py","tests":[{"id":1762609929907,"input":"4\n3 7 9 5\n4 5 6 9\n5 3 8 1\n6 5 3 2","output":"YES\nNO\nYES\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Acer\\Desktop\\CodeForce\\PROBLEMS A\\A_Fair_Playoff.py","group":"local","local":true}
