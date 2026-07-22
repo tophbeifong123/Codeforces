@@ -1,13 +1,15 @@
-for _ in range(int(input())):
-    n = int(input())
-    a = [int(x) for x in input().split()]
-    
-    one = a.count(1)
-    two = a.count(2)
+n,m = [int(x) for x in input().split()]
 
-    if one % 2 == 0:
-        two += one
+ans1 = (m // 2 + (m % 2)) * 2 
+ans1 += m - ans1
+
+ans2 = n - (m // 2 + (m % 2))
+ans2 += 1
+
+if n > m:
+    print(n - m)
+else:
+    if n == 1:
+        print(ans1)
     else:
-        two += one - 1
-
-    print("YES") if two % 2 == 0 else print("NO")
+        print(ans2)
