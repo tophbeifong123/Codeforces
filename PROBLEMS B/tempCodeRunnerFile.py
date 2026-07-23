@@ -1,15 +1,16 @@
-n,m = [int(x) for x in input().split()]
+for _ in range(int(input())):
+    n = int(input())
+    s = list(input())
 
-ans1 = (m // 2 + (m % 2)) * 2 
-ans1 += m - ans1
+    ans = 1
 
-ans2 = n - (m // 2 + (m % 2))
-ans2 += 1
+    for i in range(n -1):
+        if s[i] == '<' and s[i+1] != '>':
+            ans += 1
+        elif s[i] == '>' and s[i+1] != '<':
+            ans += 1
 
-if n > m:
-    print(n - m)
-else:
-    if n == 1:
-        print(ans1)
+    if n % 2 == 0:
+        print(ans)
     else:
-        print(ans2)
+        print(ans + 1)

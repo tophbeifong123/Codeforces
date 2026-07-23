@@ -2,18 +2,10 @@ for _ in range(int(input())):
     n = int(input())
     a = [int(x) for x in input().split()]
 
-    ans = 0
-    flag = True
-
-    if min(a) > 0:
-        print(0)
-    else:
-        for i in range(n-1):
-            if a[i+1] - a[i] > 1:
-                ans += (a[i] + 1)
-                flag = False
-                break
-        if flag == True :
-            print(a[0] + 1)
+    if len(a) % 2 == 0:
+        if len(a) > 2 or (a.count(-1) == 1 and a.count(1) == 1):
+            print("YES")
         else:
-            print(ans)
+            print('NO')
+    else:
+        print("NO")
