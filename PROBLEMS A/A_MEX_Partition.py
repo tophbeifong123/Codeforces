@@ -1,6 +1,6 @@
 for _ in range(int(input())):
     n = int(input())
-    a = [int(x) for x in input().split()]
+    a = sorted([int(x) for x in input().split()])
 
     ans = 0
     flag = True
@@ -14,6 +14,6 @@ for _ in range(int(input())):
                 flag = False
                 break
         if flag == True :
-            print(a[0] + 1)
+            print(max(a) + 1)
         else:
             print(ans)
