@@ -5,10 +5,10 @@ for _ in range(int(input())):
     c = 1
 
     for i in range(n - 1):
-        if s[i] == s[i+1]:
+        if s[i] == s[i + 1]:
             c += 1
-            ans = max(ans,c)
+            ans = max(ans, c)
         else:
             c = 1
 
-    print(c + 1)
+    print(ans + 1)  
