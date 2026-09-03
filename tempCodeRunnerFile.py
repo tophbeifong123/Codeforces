@@ -1,1 +1,2 @@
-    # print(abs(r1 - N) * abs()
+
+print(a)
